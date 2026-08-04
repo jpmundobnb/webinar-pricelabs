@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Cadencia de Reservas//Webinar PriceLabs//ES
+BEGIN:VEVENT
+UID:webinar-pricelabs-2026-08-06@cadenciadereservas.com
+DTSTAMP:20260630T000000Z
+DTSTART:20260807T000000Z
+DTEND:20260807T010000Z
+SUMMARY:Webinar PriceLabs con JP - Cadencia de Reservas
+DESCRIPTION:Webinar en vivo: como configuro PriceLabs en mis propiedades. Recibiras el acceso por correo y WhatsApp.
+BEGIN:VALARM
+TRIGGER:-PT1H
+ACTION:DISPLAY
+DESCRIPTION:Tu webinar de PriceLabs empieza en 1 hora
+END:VALARM
+END:VEVENT
+END:VCALENDAR
