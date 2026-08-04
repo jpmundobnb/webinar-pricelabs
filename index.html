@@ -109,7 +109,7 @@ footer a{color:var(--blue);text-decoration:none}
       <label>Nombre *</label><input name="nombre" type="text" required>
       <label>Apellido *</label><input name="apellido" type="text" required>
       <label>Correo electrónico *</label><input name="correo" type="email" required>
-      <label>WhatsApp (con código de país) *</label><input name="whatsapp" type="tel" placeholder="+52 998 123 4567" required>
+      <label>WhatsApp *</label><div style="display:flex;gap:8px"><select name="codpais" required style="max-width:155px"><option value="+52">+52 México</option><option value="+1">+1 EE.UU./Canadá/RD</option><option value="+57">+57 Colombia</option><option value="+54">+54 Argentina</option><option value="+56">+56 Chile</option><option value="+51">+51 Perú</option><option value="+593">+593 Ecuador</option><option value="+58">+58 Venezuela</option><option value="+591">+591 Bolivia</option><option value="+595">+595 Paraguay</option><option value="+598">+598 Uruguay</option><option value="+55">+55 Brasil</option><option value="+507">+507 Panamá</option><option value="+506">+506 Costa Rica</option><option value="+502">+502 Guatemala</option><option value="+503">+503 El Salvador</option><option value="+504">+504 Honduras</option><option value="+505">+505 Nicaragua</option><option value="+34">+34 España</option></select><input name="whatsapp" type="tel" placeholder="998 123 4567" required style="flex:1"></div>
       <label>País *</label>
       <select name="pais" required><option value="" disabled selected>Elige tu país</option><option>México</option><option>Colombia</option><option>Argentina</option><option>Chile</option><option>Perú</option><option>Ecuador</option><option>España</option><option>Estados Unidos</option><option>República Dominicana</option><option>Otro</option></select>
       <label>¿Cuántas propiedades posees o administras hoy? *</label>
@@ -152,7 +152,7 @@ document.getElementById('reg').addEventListener('submit',function(e){e.preventDe
 var f=e.target;
 var data={
  nombre:f.nombre.value, apellido:f.apellido.value, correo:f.correo.value,
- telefono:"'"+f.whatsapp.value, pais:f.pais.value,
+ telefono:"'"+f.codpais.value+" "+f.whatsapp.value, pais:f.pais.value,
  num_propiedades:f.num_propiedades.value, propiedades_pricelabs:f.propiedades_pricelabs.value,
  tipo_operacion:f.tipo_operacion.value, fuente:"webinar-pricelabs"
 };
